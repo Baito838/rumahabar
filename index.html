@@ -94,6 +94,15 @@
         border: 2px solid #00593b;
       }
 
+      ul {
+        list-style: none;
+      }
+
+      li::before {
+        content: "➥  ";
+        color: #fe6c0d;
+      }
+
       #hero {
         background-image: url("landingpage/hero.png");
         background-position: center;
@@ -101,6 +110,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
       }
 
       #ayat {
@@ -231,6 +241,14 @@
         src="logo/logo.png"
         alt=""
       />
+      <br />
+      <br />
+      <h2
+        class="hidden"
+        style="height: 130px; padding-top: 20px; color: #fe6c0d"
+      >
+        Lembaga Pendidikan
+      </h2>
     </section>
 
     <nav class="navbar sticky-top navbar-expand-lg bg-light">
@@ -302,7 +320,9 @@
     </section>
 
     <section id="visi">
-      <h1 class="hidden text-center pt-5" style="overflow: hidden;">Visi & Misi</h1>
+      <h1 class="hidden text-center pt-5" style="overflow: hidden">
+        Visi & Misi
+      </h1>
 
       <div class="w-100 h-100 d-flex justify-content-center align-items-center">
         <div class="card hidden">
@@ -314,7 +334,7 @@
               dan akhlak yang mulia..
             </p>
             <p class="text-center">MISI</p>
-            <ul>
+            <ul style="list-style-type: circle">
               <li>Melaksanakan pembelajaran tahsin dan tahfiz yang intensif</li>
               <li>Memberikan pemahaman tentang kosakata dan makna ayat</li>
               <li>
@@ -366,9 +386,6 @@
                 Didirikan oleh <b>Zendy Atreanto</b> dan
                 <b>Muhammad Jawahir</b> pada 27 Januari 2021 dan yayasan pada 14
                 Juni 2022.<br />
-                berawal dari hidayah dan niat tanpa modal infrastruktur, kita
-                berpikir untuk mendidik anak-anak dhuafa dan yatim piatu untuk
-                menjadi lebih baik masa depannya.
               </p>
             </div>
           </div>
@@ -380,7 +397,9 @@
       <h1 class="pt-5 hidden text-center">Lokasi</h1>
 
       <div class="card" style="height: min-content">
-        <div class="card-body d-flex justify-content-between flex-column flex-wrap">
+        <div
+          class="card-body d-flex justify-content-between flex-column flex-wrap"
+        >
           <p class="text-center py-2">
             Jl. H. Anan, RT.03/RW.007, Jatiluhur, Kec. Jatiasih, Kota Bks, Jawa
             Barat 17425
